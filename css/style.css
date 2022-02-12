@@ -1,0 +1,107 @@
+/* ===== RESET ===== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;  
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ===== Variaveis ===== */
+:root{
+    --Cor-01: #fff;
+    --Cor-02: #000;
+    --Cor-03: #3CF72E;
+    --Cor-04: #5F21DE;
+    --Cor-05: #ED8306;
+    --Cor-06: #25EDE6;   
+}
+body{
+
+    background: linear-gradient(to right, var(--Cor-03), var(--Cor-05));
+}
+.calc{
+    border: 10px solid var(--Cor-02);
+    width: 450px;
+    margin: 100px auto;
+    box-shadow: 5px 10px 0px 0px var(--Cor-02);
+}
+
+.tela #dados{
+    width: 420px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid var(--Cor-02);
+    box-shadow: 3px 3px 0px 0px var(--Cor-02);
+    background-color: var(--Cor-01);
+    height: 70px;
+    color: var( --Cor-03);
+    font-weight: bold;
+    font-size: 30px;
+}
+.calc table{
+    width: 400px;
+    margin: 10px auto;
+}
+.calc table tr td{
+    text-align: center;
+}
+.calc table tr td button{
+    padding: 20px;
+    width: 60px;
+    cursor: pointer;
+    margin: 3px 3px;
+    color: var(--Cor-01);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--Cor-06);
+    box-shadow: 3px 2px 0px 0px var(--Cor-02);
+    -webkit-transition: .3s; 
+    -moz-transition: .3s; 
+    -ms-transition: .3s; 
+    -o-transition: .3s; 
+    transition: .3s; 
+}
+.calc button:hover {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+transform: scale(.9);
+}
+.calc .zero{
+    width: 150px;
+    background-color: var(--Cor-05);
+}
+.calc .mais{
+    height: 130px;
+    background-color: var(--Cor-04);
+}
+@media (max-width: 485px){
+    .calc{
+    border: 10px solid var(--Cor-02);
+    width: 400px;
+    margin: 100px auto;
+    box-shadow: 5px 10px 0px 0px var(--Cor-02);
+    }
+    .calc table{
+    width: 300px !important;
+    margin: 10px auto;
+    }
+    .tela #dados{
+    width: 360px;
+    margin: 10px auto;
+    }
+    .calc .zero{
+    width: 124px;
+    background-color: var(--Cor-05);
+    }
+}
